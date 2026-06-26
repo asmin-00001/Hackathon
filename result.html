@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Trip Result{% endblock %}
+
+{% block content %}
+
+<section class="planner">
+
+    <div class="planner-container">
+
+        <h1>Your Travel Plan</h1>
+
+        <hr>
+
+        <h3>Destination</h3>
+        <p>{{ destination }}</p>
+
+        <h3>Days</h3>
+        <p>{{ days }}</p>
+
+        <h3>Budget</h3>
+        <p>${{ budget }}</p>
+
+        <h3>Travellers</h3>
+        <p>{{ people }}</p>
+
+        <h3>Travel Style</h3>
+        <p>{{ style }}</p>
+
+        <h3>Interest</h3>
+        <p>{{ interest }}</p>
+
+        <hr>
+
+        <h2>Sample Itinerary</h2>
+
+        <div class="card">
+
+            <h3>Day 1</h3>
+
+            <p>
+                Explore the city and enjoy local food.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Day 2</h3>
+
+            <p>
+                Visit famous tourist attractions.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Day 3</h3>
+
+            <p>
+                Shopping and cultural exploration.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
