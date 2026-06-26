@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}TourGenie | Home{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Plan Your Dream Vacation
+            <span>with AI</span>
+        </h1>
+
+        <p>
+            TourGenie helps you plan smarter trips with personalized
+            itineraries, budget planning, weather forecasts,
+            hotel suggestions, maps, and much more.
+        </p>
+
+        <a href="{{ url_for('planner') }}" class="btn">
+            Start Planning
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Features -->
+<section class="features">
+
+    <h2>Our Features</h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <i class="fa-solid fa-route"></i>
+            <h3>Trip Planner</h3>
+            <p>Create your travel plan in just a few clicks.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-wallet"></i>
+            <h3>Budget Calculator</h3>
+            <p>Estimate the cost of your entire trip.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-hotel"></i>
+            <h3>Hotels</h3>
+            <p>Find hotels based on your travel budget.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Restaurants</h3>
+            <p>Explore popular restaurants and local cuisine.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <h3>Weather</h3>
+            <p>Check the latest weather before your trip.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3>Maps</h3>
+            <p>Navigate easily with interactive maps.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About -->
+<section class="about">
+
+    <h2>Why TourGenie?</h2>
+
+    <p>
+
+        TourGenie combines everything you need for travel planning
+        into one simple platform.
+
+        In the final version, Gemini AI will automatically generate
+        a personalized itinerary based on your destination,
+        budget, interests, and travel style.
+
+    </p>
+
+</section>
+
+{% endblock %}
