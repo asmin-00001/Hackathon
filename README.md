@@ -10,4 +10,4 @@ A Flask-based travel planning web app that provides:
 - Python (Flask)
 - HTML/CSS/JS (front-end)
 - Gemini API (AI assistant)
--Openwether API (weather)
+- Openwether API (weather)
