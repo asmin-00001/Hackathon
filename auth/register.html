@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}Register | TourGenie{% endblock %}
+
+{% block content %}
+
+<section class="planner">
+
+    <div class="planner-container">
+
+        <h1>Create Account</h1>
+
+        <p>Join TourGenie and start exploring the world.</p>
+
+        <form action="/register" method="POST">
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your full name"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Choose a password"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>I am a</label>
+
+                <select name="role">
+
+                    <option value="tourist">Tourist</option>
+
+                    <option value="guide">Tour Guide</option>
+
+                </select>
+
+            </div>
+
+            <button class="btn" type="submit">
+
+                Register
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <p>
+
+            Already have an account?
+
+            <a href="{{ url_for('login') }}">
+
+                Login Here
+
+            </a>
+
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
